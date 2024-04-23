@@ -8,3 +8,4 @@ elif myage == user_age:
     print("you are the same age as me")
 else:
     print("you are younger than me")
+    print("ja")
