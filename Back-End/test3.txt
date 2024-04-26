@@ -1,2 +1,0 @@
-
-This text will not overwrite the contents in file but append it
