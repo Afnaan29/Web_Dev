@@ -24,8 +24,8 @@ while($running){
         $running = false;
     }
     elseif(isset($_POST["start"])){
-        $seconds ++;
-        echo $seconds . "<br>";
+        $steps ++;
+        echo $steps . "<br>";
     }
 }
 
