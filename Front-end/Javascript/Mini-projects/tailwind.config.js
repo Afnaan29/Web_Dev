@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body: ["Oswald"]
+        GreatVibes: ["Great Vibes"],
+        Oswald: ["Oswald"]
       },
     },
   },
