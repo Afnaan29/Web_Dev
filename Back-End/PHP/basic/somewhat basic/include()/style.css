@@ -1,0 +1,19 @@
+.header{
+    background-color: aquamarine;
+    color: rgb(226, 43, 43);
+}
+.header a{
+text-decoration: none;
+color: rgb(226, 43, 43);
+font-size: 1.5rem;
+}
+
+footer{
+    background-color: rgb(142, 155, 231);
+    color: rgb(247, 5, 195);
+}
+footer a{
+text-decoration: none;
+font-size: 1rem;
+color: rgb(250, 0, 250);
+}
