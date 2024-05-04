@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -211,6 +211,8 @@ textarea {
   /* 1 */
   line-height: inherit;
   /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
   color: inherit;
   /* 1 */
   margin: 0;
@@ -234,9 +236,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -492,6 +494,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 ::backdrop {
@@ -542,145 +548,171 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-9 {
+  margin-bottom: 2.25rem;
 }
 
 .ml-10 {
   margin-left: 2.5rem;
 }
 
-.ml-\[5rem\] {
-  margin-left: 5rem;
+.mt-20 {
+  margin-top: 5rem;
 }
 
-.mr-10 {
-  margin-right: 2.5rem;
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
-.mr-5 {
-  margin-right: 1.25rem;
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
-.mt-28 {
-  margin-top: 7rem;
+.mt-8 {
+  margin-top: 2rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
+.inline {
+  display: inline;
 }
 
 .flex {
   display: flex;
 }
 
-.w-96 {
-  width: 24rem;
+.w-\[14rem\] {
+  width: 14rem;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[340px\] {
+  width: 340px;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
   align-items: center;
 }
 
-.justify-between {
-  justify-content: space-between;
+.justify-center {
+  justify-content: center;
 }
 
-.border-b-2 {
-  border-bottom-width: 2px;
+.justify-around {
+  justify-content: space-around;
 }
 
-.border-\[\#1BC8D3\] {
+.rounded-t-\[40rem\] {
+  border-top-left-radius: 40rem;
+  border-top-right-radius: 40rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-\[\#AF7452\] {
   --tw-border-opacity: 1;
-  border-color: rgb(27 200 211 / var(--tw-border-opacity));
+  border-color: rgb(175 116 82 / var(--tw-border-opacity));
 }
 
-.bg-\[\#1BC8D3\] {
+.bg-\[\#FBF7EE\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(27 200 211 / var(--tw-bg-opacity));
+  background-color: rgb(251 247 238 / var(--tw-bg-opacity));
+}
+
+.bg-slate-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .pb-2 {
   padding-bottom: 0.5rem;
 }
 
-.pl-10 {
-  padding-left: 2.5rem;
+.pl-5 {
+  padding-left: 1.25rem;
 }
 
-.pr-10 {
-  padding-right: 2.5rem;
+.pr-5 {
+  padding-right: 1.25rem;
 }
 
 .pt-2 {
   padding-top: 0.5rem;
 }
 
-.text-\[45px\] {
-  font-size: 45px;
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
   font-weight: 700;
 }
 
-.text-\[\#1BC8D3\] {
+.font-light {
+  font-weight: 300;
+}
+
+.font-thin {
+  font-weight: 100;
+}
+
+.text-\[\#AF7452\] {
   --tw-text-opacity: 1;
-  color: rgb(27 200 211 / var(--tw-text-opacity));
+  color: rgb(175 116 82 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:border-b-2:hover {
-  border-bottom-width: 2px;
-}
-
-.hover\:border-\[\#1BC8D3\]:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(27 200 211 / var(--tw-border-opacity));
-}
-
-.hover\:pb-2:hover {
-  padding-bottom: 0.5rem;
-}
-
-.hover\:text-\[\#1BC8D3\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(27 200 211 / var(--tw-text-opacity));
-}
-
-@media (min-width: 640px) {
-  .sm\:mt-\[6rem\] {
-    margin-top: 6rem;
+/* @layer base {
+    h1 {
+      @apply text-xl bg-slate-600;
+    }
   }
 
-  .sm\:flex-col {
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:mt-0 {
-    margin-top: 0px;
-  }
-
-  .md\:flex-col {
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:flex-row {
-    flex-direction: row;
-  }
-}
-
+@layer components {
+    .menu-btn{
+        @apply bg-orange-500 m-5 p-5;
+    }
+} */
